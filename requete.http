@@ -1,0 +1,9 @@
+POST http://localhost:8080/api/sms/send
+Content-Type: application/json
+
+{
+  "to":"+221761823698",
+  "message":"bien recu"
+}
+
+ #######

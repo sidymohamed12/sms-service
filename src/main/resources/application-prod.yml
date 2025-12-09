@@ -1,0 +1,15 @@
+sms:
+  provider: failover
+  failoverProviders:
+    - twilio
+    - infobip
+
+  twilio:
+    accountSid: ${TWILIO_ACCOUNT_SID}
+    authToken: ${TWILIO_AUTH_TOKEN}
+    fromNumber: ${TWILIO_PHONE_NUMBER}
+
+  infobip:
+    baseUrl: https://d8lmp8.api.infobip.com
+    apiKey: ${INFOBIP_API_KEY}
+    fromNumber: ${INFOBIP_SENDER}
