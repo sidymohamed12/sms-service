@@ -15,18 +15,26 @@
 	<name>sms-service</name>
 	<packaging>jar</packaging>
 	<description>Module SMS avec Twilio, Infobip et Failover provider</description>
-	<url />
+	<url>https://github.com/sidymohamed12/sms-service</url>
 	<licenses>
-		<license />
+		<license>
+			<name>MIT License</name>
+			<url>https://opensource.org/licenses/MIT</url>
+		</license>
 	</licenses>
+
 	<developers>
-		<developer />
+		<developer>
+			<id>Sidy</id>
+			<name>Monkey D Saï</name>
+			<email>mohamedsaizonou86gmail.com</email>
+		</developer>
 	</developers>
+
 	<scm>
-		<connection />
-		<developerConnection />
-		<tag />
-		<url />
+		<connection>scm:git:git://github.com/USERNAME/sms-service.git</connection>
+		<developerConnection>scm:git:ssh://github.com/sidymohamed12/sms-service.git</developerConnection>
+		<url>https://github.com/sidymohamed12/sms-service</url>
 	</scm>
 	<properties>
 		<java.version>21</java.version>
@@ -120,11 +128,6 @@
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>
 						</path>
-						<path>
-							<groupId>org.mapstruct</groupId>
-							<artifactId>mapstruct-processor</artifactId>
-							<version>1.5.5.Final</version>
-						</path>
 					</annotationProcessorPaths>
 				</configuration>
 			</plugin>
@@ -143,5 +146,12 @@
 		</plugins>
 	</build>
 
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub Packages</name>
+			<url>https://maven.pkg.github.com/sidymohamed12/sms-service</url>
+		</repository>
+	</distributionManagement>
 
 </project>
