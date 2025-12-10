@@ -32,7 +32,7 @@
 	</developers>
 
 	<scm>
-		<connection>scm:git:git://github.com/USERNAME/sms-service.git</connection>
+		<connection>scm:git:git://github.com/sidymohamed12/sms-service.git</connection>
 		<developerConnection>scm:git:ssh://github.com/sidymohamed12/sms-service.git</developerConnection>
 		<url>https://github.com/sidymohamed12/sms-service</url>
 	</scm>
